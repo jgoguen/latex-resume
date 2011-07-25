@@ -1,0 +1,125 @@
+% Copyright (c) 2011 Joel Goguen <jgoguen (at) jgoguen.ca>
+% 
+% This CV uses resume.cls found at http://www.jgoguen.ca/resume/
+
+\documentclass[letterpaper,10pt]{resume}
+
+% Set your name here. This will update the PDF information and the name 
+% on the CV.
+\newcommand{\myname}{John Smith}
+
+\hypersetup{
+	baseurl={http://www.example.com},
+	pdftitle={\myname\ - Résumé},
+	pdfauthor={\myname},
+	pdfsubject={\myname's Résumé},
+	pdflang={en-CA},
+}
+
+% Set default page footer
+\cfoot{\myname\ -- Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+% CV header
+\contact{\myname}{123 Some Street}{Somewhereville, AB  A1B 2C3}{http://www.example.com}{me@example.com}{(555) 555-5555}
+
+% Objective section
+%\header{Objective}
+%	\begin{body}
+%	To find a job so I can pay my bills.
+%	\end{body}
+
+\header{Summary}
+	\begin{body}
+	Educated and motivated worker seeking gainful employment in any position 
+	that will guarantee large amounts of cash.
+	\end{body}
+
+\header{Education}
+	\begin{body}
+	\school{Bachelor of Non-Specific Amusement}{May 2010}{University of Fun}{Funnytown, AB}
+		\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+			\begin{itemize}
+			\item Graduated with honours in stand-up comedy
+			\end{itemize}
+		&
+			\begin{itemize}
+			\item Stole the stage at graduation
+			\end{itemize}
+		\end{tabular}
+
+	\medskip
+
+	\subheader{Internships}
+		\begin{changemargin}{0.2in}{0in}
+		\employer{Funnyman Comedy Club}{Funnytown, AB}
+		\jobrole{Opening Act}{January 2006 -- April 2010}
+			\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+				\begin{itemize}
+				\item Made people laugh
+				\item Told funny jokes
+				\end{itemize}
+			&
+				\begin{itemize}
+				\item Filled in for the main act when needed
+				\end{itemize}
+			\end{tabular}
+		\end{changemargin}
+	\end{body}
+
+\header{Professional Experience}
+	\begin{body}
+	\employer{Funnytown National Park}{Funnytown, AB}
+	\jobrole{Tour guide}{April 2006 -- August 2006}
+		\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+			\begin{itemize}
+			\item Show people around the park
+			\item Point out cool and interesting things
+			\end{itemize}
+		&
+			\begin{itemize}
+			\item Keep people amused
+			\end{itemize}
+		\end{tabular}
+	\jobrole{Hospitatlity Centre Attendant}{April 2005 -- August 2005}
+		\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+			\begin{itemize}
+			\item Made people feel at home in the park
+			\item Ensured everyone left smiling
+			\end{itemize}
+		&
+			\begin{itemize}
+			\item Kept things going smoothly
+			\end{itemize}
+		\end{tabular}
+		
+	\employer{Gas 'R Us}{Funnytown, AB}
+	\jobrole{Professional Petroleum Fuel Transfer Engineer}{March 2003 -- April 2005}
+		\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+			\begin{itemize}
+			\item Pumped gas
+			\item Took people's money to pay for their gas
+			\end{itemize}
+		&
+			\begin{itemize}
+			\item Washed windows by request
+			\end{itemize}
+		\end{tabular}
+	\end{body}
+
+\header{Personal Skills}
+	\begin{body}
+		\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+		\begin{itemize}
+		\item Very funny
+		\item Can come up with jokes for any situation
+		\end{itemize}
+		&
+		\begin{itemize}
+		\item Enjoy making people laugh
+		\item Able to pump gas without spilling any on the ground
+		\end{itemize}
+		\end{tabular}
+	\end{body}
+\end{document}
