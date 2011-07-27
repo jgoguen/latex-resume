@@ -1,0 +1,56 @@
+pygments: true
+markdown: rdiscount
+permalink: /resume/:year/:month/:day/:title.html
+future: false
+paginate: 10
+exclude: [latex-resume.komodoproject]
+
+rdiscount:
+  extensions: []
+
+title: "Heap Overrun"
+description: "The personal web site for Joel Goguen. Society, technology and politics from the perspective of a geek."
+author: "Joel Goguen"
+analytics_id: "UA-18679624-1"
+analytics_domain: "jgoguen.ca"
+twitter_name: jgoguen
+twitter_count: 3
+base_url: "http://www.jgoguen.ca"
+base_domain: "jgoguen.ca"
+atom_url: "/feeds/atom"
+version: 1
+
+nav_links:
+  - title: Home
+    description: Main Page
+    url: "/"
+  - title: Atom
+    description: Syndication
+    url: "/feeds/atom"
+  - title: Post Tags
+    description: Categories
+    url: "/tags.html"
+
+sidebar_groups:
+  - title: About Joel Goguen
+    description: "Information about Joel Goguen"
+    links:
+      - url: "/about.html"
+        title: "About Me"
+        description: "A brief look at me"
+  - title: "Interesting Links"
+    description: "Links to pages I find interesting"
+    links:
+      - url: "https://twitter.com/jgoguen"
+        title: "My Twitter Profile"
+        description: "Joel Goguen on Twitter"
+  - title: "Subscribe"
+    description: "Stay updated on my thoughts & activities via Atom syndication."
+    links:
+      - url: "/feeds/atom"
+        title: "Atom Feed"
+        description: "Full content"
+      - url: http://add.my.yahoo.com/rss?url=http%3A%2F%2Fwww.jgoguen.ca%2Ffeeds%2Fatom
+        title: <img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" alt="Add to MyYahoo!" />
+      - url: http://fusion.google.com/add?feedurl=http%3A%2F%2Fwww.jgoguen.ca%2Ffeeds%2Fatom
+        title: <img src="http://buttons.googlesyndication.com/fusion/add.gif" alt="Add to Google Reader" />

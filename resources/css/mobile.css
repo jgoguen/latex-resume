@@ -1,0 +1,315 @@
+/*
+ * An iOS-oriented version of Grid Focus.
+ * Author: Joel Goguen
+ * Version: 1.0
+ */
+
+/* Various things to simply hide */
+.hidden-content,
+#page-header > p,
+#page-header > img,
+#bottomnav,
+#leftbar,
+#more_reading,
+nav > div > a > span,
+nav > .archives,
+.middle_links > p
+{
+	display: none;
+	visibility: hidden;
+}
+/* End hiding rules */
+
+
+html,body
+{
+	background: #DDDDDD;
+	color: #333333;
+	font-family: Helvetica;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.hide
+{
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+	width: 0px;
+	overflow: hidden;
+}
+
+a
+{
+	color: #333333;
+}
+
+.post .entry a
+{
+	font-weight: bold;
+}
+
+#rightbar > div.subscribe ul a
+{
+	text-decoration: none;
+}
+
+.rounded
+{
+	border-radius: 5px;
+}
+
+.fix
+{
+	display: block;
+}
+
+.left
+{
+	float: left;
+}
+
+#page-header > h1
+{
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #666666;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#999999));
+	color: #333333;
+	height: 45px;
+	text-align: center;
+}
+
+#page-header > h1 > a
+{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0;
+	text-decoration: none;
+
+	/* Get the iOS L&F going */
+	text-shadow: 0px 1px 0px #FFFFFF;
+	max-width: 160px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#page-header div.leftButton
+{
+	position: absolute;
+	top: 7px;
+	left: 6px;
+	height: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0px;
+	line-height: 28px;
+	border-width: 0 8px 0 8px;
+	-webkit-border-image: url(../img/button.png) 0 8 0 8;
+}
+
+#page-header div.pressed
+{
+	-webkit-border-image: url(../img/button_clicked.png) 0 8 0 8;
+}
+
+#search fieldset
+{
+	border: none;
+	-webkit-padding-start: 0;
+}
+
+#search fieldset input[type=text]
+{
+	width: 85%;
+}
+
+nav
+{
+	margin: 10px;
+	padding: 0px;
+}
+
+nav > div > a
+{
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #333333;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+
+nav > div:first-child > a
+{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+nav > div:last-child > a
+{
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#mid
+{
+	padding: 10px;
+}
+
+.postMeta
+{
+	background: url(../img/dot.png) repeat-x left center;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-align: right;
+	margin-bottom: 5px;
+	/* Stop authenticated users from seeing wrapped lines */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.postMeta span.articlebtn a
+{
+	background-color: #AAAAAA;
+	color: #000000;
+	padding: 0 6px;
+	margin: 0 2px;
+	text-transform: none;
+}
+
+.postMeta span.text
+{
+	background: #DDDDDD;
+	color: #555555;
+	padding: 0 2px 0 4px;
+}
+
+.postMeta span.date
+{
+	color: #555555;
+}
+
+.post
+{
+	margin-bottom: 10px;
+}
+
+.post > h2
+{
+	margin-top: 0;
+	margin-bottom: 0.25em;
+}
+
+.post .entry
+{
+	text-align: left;
+}
+
+.post .entry p
+{
+	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+
+.tags
+{
+	border: 1px solid #999999;
+}
+
+.tags a
+{
+	font-weight: normal;
+	margin: 0 0.8em;
+	white-space: nowrap;
+	color: #555555;
+}
+
+#rightbar > div
+{
+	text-align: left;
+}
+
+#rightbar > div ul, #share ul
+{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+}
+
+#rightbar > div ul li
+{
+	margin-bottom: 5px;
+}
+
+#share ul
+{
+	text-align: left;
+}
+
+#share ul li
+{
+	display: block;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#comments_wrapper
+{
+	clear: both;
+	text-align: left;
+}
+
+.row
+{
+	text-align: left;
+	margin-bottom: 10px;
+	display: block;
+	float: none;
+}
+
+.row > textarea
+{
+	width: 99%;
+	height: 150px;
+}
+
+#fortune
+{
+	text-align: left;
+}
+
+#footer
+{
+	text-align: left;
+	border-top: 1px #333333 dotted;
+	clear: both;
+}
+
+.syntaxhighlighter code
+{
+	display: inline;
+}
+
+.postMeta span.comments
+{
+	background: #DDDDDD url(../img/chat_grey.png) no-repeat right center;
+	padding-right: 15px;
+	margin-right: 2px;
+}
+
+#commentslist
+{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+}

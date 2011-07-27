@@ -1,0 +1,16 @@
+---
+layout: twocol
+title: 404 Not Found
+---
+<div class="post">
+	<header class="postMeta"><span class="text">Page Not Found</span></header>
+	<h2>Nobody Here But Us Chickens!</h2>
+	<section class="entry">
+		<p>Sorry, the page you tried to access isn't available.</p>
+		<p>I realize this message is little consolation, but you could try:</p>
+		<ul>
+			<li>the search box on the right</li>
+			<li><a href="/tags.html">the list of post tags</a></li>
+		</ul>
+	</section>
+</div>

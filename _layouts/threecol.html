@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<section id="leftbar" class="sidebar left">
+	<!--<div id="fortune-div">
+		<h3>Thought Of The Minute</h3>
+		<div id="fortune"></div>
+		<a id="load-fortune" onclick="loadFortune();">Next Fortune</a>
+	</div>-->
+
+	{% if site.twitter_name %}
+	<div id="twitter_div">
+		<h3>{{ site.author }} on Twitter</h3>
+		<ul id="twitter_update_list"></ul>
+		<a href="https://twitter.com/{{ site.twitter_name }}"
+			title="Follow {{ site.author }} on Twitter" id="twitter-link" target="_blank"
+			style="display: block; text-align: right;">Follow {{ site.author }} on Twitter</a>
+	</div>
+	{% endif %}
+
+	<!--<div id="facebook-likebox">
+		<iframe src="http://www.facebook.com/plugins/likebox.php?id={{ facebook_page_id }}&amp;width=220&amp;connections=5&amp;stream=false&amp;header=false&amp;height=250" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 220px; height: 250px;" allowTransparency="true"></iframe>
+	</div>-->
+
+	<div id="elseWhere">
+		<!--<ul id="imgLinks">
+		</ul>-->
+	</div>
+</section>
+
+<section id="mainCol">
+	{{ content }}
+</section>
