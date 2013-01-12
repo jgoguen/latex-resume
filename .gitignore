@@ -1,0 +1,9 @@
+.project
+.classpath
+.includepath
+.pydevproject
+.komodotools
+*.xcodeproj
+*.kpf
+*.komodoproject
+nbproject
