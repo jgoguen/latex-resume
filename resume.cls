@@ -25,8 +25,6 @@
 \newcommand{\mysurname}{Public}
 \newcommand{\myfullname}{\myname\ Q.\ \mysurname}
 \newcommand{\myurl}{http://www.example.com}
-\newcommand{\addresstop}{123 My Street}
-\newcommand{\addressbottom}{Somewhereville, AB, A1B 2C3}
 \newcommand{\myphone}{(555) 555-5555}
 
 % Default useful/helpful packages
@@ -47,7 +45,7 @@
 	pdfcreator={XeLaTeX},
 	pdftitle={\myfullname - Résumé},
 	pdfsubject={\myfullname's Résumé},
-	%pdfstartview={FitW},
+	pdfstartview={FitW},
 	pdfdisplaydoctitle=true,
 	colorlinks=true,
 	urlcolor=black,
@@ -115,12 +113,11 @@
 	\end{changemargin}
 }
 
-\newcommand{\contact}[6]{
+\newcommand{\contact}[4]{
 	\begin{changemargin}{-0.5in}{-0.5in}
 		\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-		\textbf{\large #1}  & #6\\
-		#2 & #5 \\
-		#3 & \url{#4} \\
+		\textbf{\large #1}  & #4\\
+		\url{#2} & #3 \\
 		\end{tabular*}
 	\end{changemargin}
 }
